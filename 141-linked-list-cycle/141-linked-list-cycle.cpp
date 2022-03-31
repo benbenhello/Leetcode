@@ -12,10 +12,8 @@ public:
         if(head == NULL)
             return false;
         while(head->next != NULL){
-            if(head->next->val == 1000000){
+            if(head->next->val == 1000000)
                 return true;
-                
-            }
             head->val = 1000000;
             head = head->next;
         }
